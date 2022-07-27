@@ -16,18 +16,18 @@ It uses the `illuminate/encryption` library, which has quite a lot of dependenci
 
 - Install the plugin
 - In `config.php` add the following config option:
-```
+```php
 'secret-links.encryptionKey' => '32 character encryption key',
 ```
 
 - In your `index.php` add:
-```
+```php
 // Needed because the Illuminate framework brings its own e function.
 define('KIRBY_HELPER_E', false);
 ```
 
 - Somewhere in your `config.php` you may have a `route:before` hook that manages your secret-ness. Add the following:
-```
+```php
 'hooks' => [
         
         // […]

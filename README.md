@@ -48,7 +48,7 @@ define('KIRBY_HELPER_E', false);
 ]
 ```
 
-- Somewhere use `<?= PwaSecretLinks::generateShareLink($page) ?>` to return the sharable url. You can also specify the parameter name (`s`) and the seconds until expiry (86400): `<?= PwaSecretLinks::generateShareLink($page, 'x', 300) ?>` 
+- Somewhere use `<?= PwaSecretLinks::generateShareLink($page) ?>` to return the sharable url. You can also specify the parameter name (default: `s`) and the seconds until expiry (default: 86400): `<?= PwaSecretLinks::generateShareLink($page, 'x', 300) ?>` 
 
 ## License
 
